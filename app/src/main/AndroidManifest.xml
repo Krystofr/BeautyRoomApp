@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.christopher.beautyroomapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/sublogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MISProject">
+        <activity android:name="app.christopher.beautyroomapp.toolbar.Feedback"
+            android:parentActivityName="app.christopher.beautyroomapp.BottomNav"/>
+        <activity android:name="app.christopher.beautyroomapp.ui.dashboard.external.activity.PaymentDetails" />
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <activity
+            android:name="app.christopher.beautyroomapp.ui.dashboard.external.ServicesActivity"
+            android:parentActivityName="app.christopher.beautyroomapp.BottomNav" />
+        <activity
+            android:name="app.christopher.beautyroomapp.toolbar.Testimonials"
+            android:parentActivityName="app.christopher.beautyroomapp.BottomNav" />
+        <activity
+            android:name="app.christopher.beautyroomapp.toolbar.Contact"
+            android:parentActivityName="app.christopher.beautyroomapp.BottomNav" />
+        <activity
+            android:name="app.christopher.beautyroomapp.toolbar.AboutUs"
+            android:parentActivityName="app.christopher.beautyroomapp.BottomNav" />
+        <activity
+            android:name="app.christopher.beautyroomapp.BottomNav"
+            android:label="@string/title_activity_bottom_nav" />
+        <activity android:name="app.christopher.beautyroomapp.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

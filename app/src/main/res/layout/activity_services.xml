@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.external.ServicesActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/bh"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="4dp"
+        android:background="@drawable/background_selector"
+        android:text="Tap to view our 'Business Schedule'."/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tabLayout"
+        android:isScrollContainer="true"
+        app:tabSelectedTextColor="@color/strong_magenta"
+        app:tabTextColor="@color/black"
+        app:tabPadding="10dp"
+        app:tabIndicatorGravity="bottom"
+        app:layout_constraintTop_toBottomOf="@id/bh"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicatorHeight="3dp"
+        app:tabIndicatorColor="@color/strong_magenta"
+        app:tabUnboundedRipple="true"
+        app:tabMode="scrollable"
+        app:tabRippleColor="@color/colorPrimary"
+        android:layout_height="wrap_content"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:id="@+id/viewPager"
+        android:layout_marginTop="93dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="40dp"
+        android:layout_height="match_parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

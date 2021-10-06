@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".toolbar.Contact">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarSize="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="15dp"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="20dp"
+                android:id="@+id/const_location"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="25sp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txt_contact_info"
+                    android:text="Contact Information"
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_contact_info"
+                    android:id="@+id/img_location"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_location"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"
+                    android:id="@+id/location"
+                    android:onClick="openLocation"
+                    app:layout_constraintStart_toEndOf="@id/img_location"
+                    app:layout_constraintTop_toTopOf="@id/img_location"
+                    app:layout_constraintBottom_toBottomOf="@id/img_location"
+                    android:layout_height="wrap_content"
+                    android:text="The Xpression Hair &amp; Beauty, 84 Upper Parliament St, Nottingham NG1 6LF, Nottinghamshire."/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telephone"
+                    app:layout_constraintTop_toBottomOf="@id/location"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="@drawable/ic_phone"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"
+                    android:id="@+id/number"
+                    android:padding="5dp"
+                    android:onClick="callPhone"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/telephone"
+                    app:layout_constraintTop_toTopOf="@id/telephone"
+                    app:layout_constraintBottom_toBottomOf="@id/telephone"
+                    android:layout_height="wrap_content"
+                    android:text="+44 7883428612"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/person"
+                    app:layout_constraintTop_toBottomOf="@id/telephone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="@drawable/ic_person"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp"
+                    android:id="@+id/text_email"
+                    android:onClick="openGmail"
+                    app:layout_constraintStart_toEndOf="@id/telephone"
+                    app:layout_constraintTop_toTopOf="@id/person"
+                    app:layout_constraintBottom_toBottomOf="@id/person"
+                    android:layout_height="wrap_content"
+                    android:text="Xpression@enquiries.co.uk"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintStart_toEndOf="@id/telephone"
+                    app:layout_constraintTop_toBottomOf="@id/text_email"
+                    android:layout_height="wrap_content"
+                    android:text="Customerservices@Xpression.co.uk"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:id="@+id/const_icon"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@id/const_location"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/ic_spa"
+                    android:id="@+id/icon_spa"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:id="@+id/view_left"
+                    app:layout_constraintEnd_toStartOf="@id/icon_spa"
+                    app:layout_constraintTop_toTopOf="@id/icon_spa"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintBottom_toBottomOf="@id/icon_spa"
+                    android:background="#D62077"/>
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:id="@+id/view_right"
+                    app:layout_constraintStart_toEndOf="@id/icon_spa"
+                    app:layout_constraintTop_toTopOf="@id/icon_spa"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="@id/icon_spa"
+                    android:background="#D62077"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Send Us An Enquiry •"
+                android:textAllCaps="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/get_IT"
+                app:layout_constraintTop_toBottomOf="@id/const_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="@color/dark_brown"
+                android:textSize="20sp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/get_IT"
+                android:id="@+id/CLayout"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txt_name"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="Name*"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@id/tLayout1"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/tLayout1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_name"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:textColorHint="@color/gray">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/name"
+                        android:maxLines="2"
+                        android:inputType="textPersonName"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txt_phone"
+                    android:textSize="14sp"
+                    android:text="Phone*"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@id/tLayout1"
+                    app:layout_constraintStart_toStartOf="@id/tLayout2"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/tLayout2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:counterEnabled="true"
+                    app:counterTextColor="@color/blue"
+                    app:counterMaxLength="11"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    app:layout_constraintTop_toBottomOf="@id/txt_phone"
+                    android:textColorHint="@color/gray">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:ems="16"
+                        android:id="@+id/phone"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:textSize="17sp"
+                        android:maxLines="1"
+                        android:textColor="@color/black"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txt_email"
+                    android:textSize="14sp"
+                    android:text="Email*"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@id/tLayout2"
+                    app:layout_constraintStart_toStartOf="@id/tLayout3"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/tLayout3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    app:layout_constraintTop_toBottomOf="@id/txt_email"
+                    android:textColorHint="@color/gray">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:ems="16"
+                        android:id="@+id/email"
+                        android:inputType="textEmailAddress"
+                        android:textSize="17sp"
+                        android:maxLines="1"
+                        android:textColor="@color/black"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txt_subject"
+                    android:textSize="14sp"
+                    android:text="Subject*"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@id/tLayout3"
+                    app:layout_constraintStart_toStartOf="@id/tLayout3"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/tLayout4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    app:layout_constraintTop_toBottomOf="@id/txt_subject"
+                    android:textColorHint="@color/gray">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:ems="16"
+                        android:id="@+id/subject"
+                        android:inputType="textShortMessage"
+                        android:maxLines="2"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txt_message"
+                    android:textSize="14sp"
+                    android:text="Message*"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@id/tLayout4"
+                    app:layout_constraintStart_toStartOf="@id/tLayout5"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/tLayout5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    app:layout_constraintTop_toBottomOf="@id/txt_message"
+                    android:textColorHint="@color/gray">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:id="@+id/message"
+                        android:maxLines="10"
+                        android:textStyle="bold"
+                        android:inputType="textLongMessage"
+                        android:paddingBottom="110dp"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="160dp"
+                    app:layout_constraintTop_toBottomOf="@id/tLayout5"
+                    app:layout_constraintEnd_toEndOf="@id/tLayout5"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp"
+                    android:onClick="submit"
+                    app:cardBackgroundColor="@color/whitish_gray"
+                    android:id="@+id/cv_submit"
+                    android:layout_marginTop="25dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_height="50dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Send Enquiry"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:gravity="center"
+                            android:textSize="17sp"/>
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/CLayout"
+                android:background="@color/dark_brown"
+                android:layout_marginTop="30dp"
+                android:padding="25dp"
+                android:layout_height="190dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thanks for visiting"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    android:id="@+id/txt1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="15dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textColor="@color/brown"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/we_pride_ourselves"
+                    android:textSize="16sp"
+                    android:layout_marginTop="25dp"
+                    app:layout_constraintTop_toBottomOf="@id/txt1"
+                    app:layout_constraintStart_toStartOf="@id/txt1"
+                    android:textColor="@color/color_white"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

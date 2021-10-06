@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#90130407</color>
+    <color name="colorPrimaryDark">#C60E0406</color>
+    <color name="colorAccent">#4A148C</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="center_color">#F4E0E7</color>
+    <color name="overlay_pink">#2EEFB1C6</color>
+    <color name="ash">#F3EEEF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#393838</color>
+    <color name="purple">#29112E</color>
+    <color name="overlay_purple">#21D6447E</color>
+    <color name="brown">#C6748C</color>
+    <color name="magenta">#E91E63</color>
+    <color name="strong_magenta">#930A38</color>
+    <color name="light_magenta">#AC297B</color>
+    <color name="blue">#9D6DF1</color>
+    <color name="fade_blue">#C3BBBF</color>
+    <color name="thick_blue">#22035A</color>
+    <color name="fb_blue">#6A78DA</color>
+    <color name="opaque_purple">#5E5F0C4D</color>
+    <color name="light_pink">#FF65FF</color>
+    <color name="overlay_brown">#EC5473</color>
+    <color name="opaque">#0A332D30</color>
+    <color name="whitish_gray">#DDDADA</color>
+    <color name="green">#498A29</color>
+    <color name="dark_brown">#300810</color>
+    <color name="slight_gray">#E4DCE2</color>
+    <color name="OM">#C6748C</color>
+</resources>

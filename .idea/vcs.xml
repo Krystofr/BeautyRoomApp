@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AAU-P2-RentMate-android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Android-Image-Slider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AndroidRentApp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Grocery-App" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/GroceryShopApp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/GroceryStore-with-server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Landlord-Base" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/LimelightBeauty" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PokeApi-App" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PokeApi-pokemon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PokemonApiDemo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PokemonUISample" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Squezap" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/WallpaperApp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Wallpy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Weather-Forcast" vcs="Git" />
+  </component>
+</project>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "149651080249",
+    "firebase_url": "https://misproject-cb328-default-rtdb.firebaseio.com",
+    "project_id": "misproject-cb328",
+    "storage_bucket": "misproject-cb328.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149651080249:android:2c722757866dce5c69b9e8",
+        "android_client_info": {
+          "package_name": "app.christopher.misproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149651080249-rta132ntqavsjqhl2kdbr8t58iqm83sj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.christopher.misproject",
+            "certificate_hash": "cd86df8069c41119cde5cd55c73c11fd5bb9cbcd"
+          }
+        },
+        {
+          "client_id": "149651080249-goo9v88seo9tj0lib6b32egp2dfb28h3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7-NQxN5tEEsZkJudeSnqDGF3EGmH5dvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149651080249-7o756trj293qsq1v3ffqm7jr5diqrf2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/slight_gray"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".onboarding.screens.FirstScreen">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        app:civ_border_color="@color/gray"
+        android:id="@+id/image1"
+        app:civ_border_width="1dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/screen1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image1"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:text="Beauty Makers"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/desc1"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/gabriola"
+        app:layout_constraintTop_toBottomOf="@id/title1"
+        android:layout_marginTop="20dp"
+        android:text="@string/desc1"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="23sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="22sp"
+        android:id="@+id/next1"
+        android:fontFamily="sans-serif"
+        android:padding="4dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@color/dark_brown"
+        app:drawableEndCompat="@drawable/ic_arrow_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
